@@ -5,8 +5,7 @@ pipeline {
         stage('Build&Deploy') {
             steps {
              // Get SHA1 of current commit
-              script {
-                 commit_id = sh(script: "git rev-parse --short HEAD", returnStdout: true).trim()
+                
               }
              // remove previous containers 
              // BUILD the Docker image
